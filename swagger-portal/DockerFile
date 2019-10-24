@@ -1,0 +1,17 @@
+# docker build -t swagger-portal:latest .
+# docker run -d -p 5000:5000 swagger-portal
+
+FROM python:3.8-rc-slim
+
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+
+RUN git clone https://github.com/namith-scindhia-newpage-io/adf-portal.git
+
+WORKDIR /usr/src/app/adf-portal/swagger-portal
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]

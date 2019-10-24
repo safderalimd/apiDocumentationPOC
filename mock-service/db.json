@@ -1,0 +1,22 @@
+{
+  "search": [
+    {
+      "id": "1",
+      "name": ".NET Project",
+      "description": "",
+      "url": "https://localhost:5001/swagger/v1/swagger.json"
+    },
+    {
+      "id": "2",
+      "name": "Python Project",
+      "description": "",
+      "url": "http://rackerlabs.github.io/wadl2swagger/openstack/swagger/dbaas.yaml"
+    },
+    {
+      "id": "3",
+      "name": "PHP Project",
+      "description": "",
+      "url": "http://rackerlabs.github.io/wadl2swagger/openstack/swagger/volume-api-v1.yaml"
+    }
+  ]
+}
